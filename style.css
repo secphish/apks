@@ -10,7 +10,7 @@ h1 {
   }
 
 .intro {
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 
 
@@ -19,6 +19,8 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     text-align:center;
+    border: 1px solid black;
+    border-collapse: collapse;
   }
 
   th, td {
@@ -26,8 +28,19 @@ h1 {
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 40px;
+    border: 1px solid black;
+    border-collapse: collapse;
   }
 
   th {
     text-decoration: underline;
   }
+
+.enlarge {
+  transition: transform .2s;
+}
+
+.enlarge:hover {
+  transform: scale(3);    
+}
+
